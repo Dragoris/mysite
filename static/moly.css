@@ -1,0 +1,71 @@
+h1{
+    display: inline;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  text-align: left;
+  font-size: 21px;
+  height: 108px;
+  background: #335C7D;
+  color: #fff;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  display: inline-flex;
+  // set animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+header.sticky {
+  font-size: 15px;
+  height: 48px;
+  background: #efc47D;
+  text-align: left;
+  padding-left: 6px;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  display: inline-flex;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+/* work on small screens later
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-flex;
+    margin-right: -4px;
+  }
+}*/
