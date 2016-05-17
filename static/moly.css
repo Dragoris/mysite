@@ -1,36 +1,69 @@
 *{
   margin: 0;
-  border: 0;
+  padding: 0;
 
 }
-.main-header{
+.vertical-header{
   position: fixed;
   margin: 75px 0 0 75px;
 }
-.logo{
+.vertical-header .logo{
   color: white;
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-bottom: 30px;
 }
-
-.nav a{
-  text-decoration: none;
-  color: white;
-  font-size: 2em;
-}
-.nav ul{
+.vertical-header ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.nav li{
+.vertical-header li{
     margin-bottom: 5px;
-
 }
+.vertical-header a{
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+
+.horizontal-header{
+  position: relative;
+  background-color: grey;
+  width: 100%;
+  top: 783px;
+  height: 50px;
+}
+.horizontal-header ul{
+  list-style: none;
+  text-align: center;
+}
+.horizontal-header li{
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  float: right;
+  width: 10%;
+}
+.horizontal-header .logo{
+  font-size: 3em;
+  float: left;
+}
+.horizontal-header a{
+    text-decoration: none;
+    color: black;
+  }
+  .fixed{
+    position: fixed;
+  }
+
+
 .container{
   max-width: 960px;
   margin: 0 auto;
 }
+
+
 .paralax{
   height: 783px;
   background-repeat: no-repeat;
@@ -38,6 +71,8 @@
   background-size: cover;
   max-width: 100%;
 }
+
+
 .content{
   height: 783px;
   display: flex;
@@ -45,6 +80,8 @@
   align-items: center;
   text-align: justify;
 }
+
+
 .content-thin{
   height: 517px;
   display: flex;
@@ -69,17 +106,23 @@
   margin-top: 25px;
   align-self: flex-start;
   }
+
+
 .headline{
   width: 45%;
   color: white;
   font-size: 3.5em;
   text-align: justify;
-  margin: 0 0 405px 123px;
+  margin: 0 0 254px 123px;
 }
+
+
 .paralax-1{
   background-image: url(/../../static/engine.jpg);
 }
+
+
 .paralax-2{
   background-image: url(/../../static/furnace.jpg);
-    height: 517px;
+  height: 517px;
 }
