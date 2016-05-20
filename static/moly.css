@@ -128,3 +128,25 @@
   background-image: url(/../../static/furnace.jpg);
   height: 517px;
 }
+.paralax-2-thin{
+  height: 107px;
+  background-image: url(/../../static/furnace.jpg);
+}
+.product-info{
+  height: 313px;
+}
+.bullet-points{
+  width: 25%;
+  float: left;
+  text-align: left;
+  background-color: white;
+}
+.bullet-points li{
+  padding-bottom: 20px;
+
+}
+.graph{
+  width: 75%;
+  float: right;
+  max-height: 100%;
+}
