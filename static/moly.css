@@ -6,6 +6,7 @@
 .vertical-header{
   position: fixed;
   margin: 75px 0 0 75px;
+  padding-top: 150px;
 }
 .vertical-header .logo{
   color: white;
@@ -55,6 +56,7 @@
   }
   .fixed{
     position: fixed;
+    top:0;
   }
 
 
