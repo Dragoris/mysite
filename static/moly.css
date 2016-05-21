@@ -8,10 +8,10 @@
   margin: 75px 0 0 75px;
   padding-top: 150px;
 }
-.vertical-header .logo{
-  color: white;
-  font-size: 1.5em;
-  margin-bottom: 30px;
+.vertical-header img{
+  width: 253px;
+  height: 78px;
+  margin-left: -11px
 }
 .vertical-header ul{
   list-style-type: none;
@@ -34,6 +34,11 @@
   width: 100%;
   top: 783px;
   height: 50px;
+
+}
+.horizontal-header .logo{
+  float: left;
+  width: 200px;
 }
 .horizontal-header ul{
   list-style: none;
@@ -46,8 +51,9 @@
   float: right;
   width: 10%;
 }
-.horizontal-header .logo{
-  font-size: 3em;
+.horizontal-header img{
+  width: 202px;
+  height: 53px;
   float: left;
 }
 .horizontal-header a{
