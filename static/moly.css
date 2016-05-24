@@ -1,168 +1,140 @@
-*{
-  margin: 0;
-  padding: 0;
-
+/* Grid set up */
+.row,
+.column {
+    box-sizing: border-box; /* adds border and padding into width calulations*/
 }
-.vertical-header{
-  position: fixed;
-  margin: 75px 0 0 75px;
-  padding-top: 150px;
+/* "clear-fix" to force rows to hold columns*/
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
 }
-.vertical-header img{
-  width: 285px;
-  height: 90px;
-  margin-left: -11px
-}
-.vertical-header ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.vertical-header li{
-    margin-bottom: 5px;
-}
-.vertical-header a{
-  text-decoration: none;
-  color: white;
-  font-size: 2em;
+.row:after {
+    clear: both;
 }
 
-
-.horizontal-header{
-  position: relative;
-  background-color: #f4f4f4;
-  width: 100%;
-  top: 783px;
-  height: 50px;
-
-
+.column {
+    position: relative;
+    float: left;
+    display: block;
 }
-.horizontal-header .logo{
-  float: left;
-  width: 188px;
+/* left margin for all except the 1st column*/
+.column + .column {
+    margin-left: 1.6%;
 }
-.horizontal-header .logo:hover{
-  border-bottom: none;
+.column-1 {
+    width: 6.86666666667%;
 }
-.horizontal-header ul{
-  list-style: none;
-  text-align: center;
+.column-2 {
+    width: 15.3333333333%;
 }
-.horizontal-header li{
-  height: 50px;
-  line-height: 50px;
-  display: inline-block;
-  float: right;
-  width: 10%;
+.column-3 {
+    width: 23.8%;
 }
-.horizontal-header li:hover{
-  border-bottom: 3px solid green;
+.column-4 {
+    width: 32.2666666667%;
 }
-.horizontal-header img{
-  width: 188px;
-  height: 53px;
-  float: left;
+.column-5 {
+    width: 40.7333333333%;
 }
-.horizontal-header a{
-    text-decoration: none;
-    color: black;
-  }
-  .fixed{
-    position: fixed;
-    top:0;
-  }
-
-
-.container{
-  max-width: 960px;
-  margin: 0 auto;
+.column-6 {
+    width: 49.2%;
 }
-
-
-.paralax{
-  height: 783px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  max-width: 100%;
+.column-7 {
+    width: 57.6666666667%;
+}
+.column-8 {
+    width: 66.1333333333%;
+}
+.column-9 {
+    width: 74.6%;
+}
+.column-10 {
+    width: 83.0666666667%;
+}
+.column-11 {
+    width: 91.5333333333%;
+}
+.column-12 {
+    width: 100%;
+    margin-left: 0;
+}
+/* makes all columns 100% wide and removes "gutters" aka margin-left*/
+@media only screen and (max-width: 550px) {
+    .column-1, 
+    .column-2, 
+    .column-3, 
+    .column-4, 
+    .column-5, 
+    .column-6, 
+    .column-7, 
+    .column-8, 
+    .column-9, 
+    .column-10, 
+    .column-11, 
+    .column-12 {
+        float: none;
+        width: auto;
+    }
+  
+    .column + .column {
+        margin-left: 0;
+    }
 }
 
 
-.content{
-  height: 783px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  text-align: justify;
+ /*General Styling */
+
+
+body {
+    padding: 20px;
+}
+
+.column {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #777;
+    padding: 5px;
+    min-height: 30px;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 10px;
 }
 
 
-.content-thin{
-  height: 516px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  text-align: justify;
-}
-.content-thin p{
-  font-size: 3em;
-  margin: 0 120px;
-  font-family: NanumGothic;
-  }
-  .content-white{
-    height: 517px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  text-align: justify;
-  }
-  .content-white p{
-  color: white;
-  font-size: 3em;
-  margin-top: 25px;
-  align-self: flex-start;
-  }
 
-
-.headline{
-  width: 45%;
-  color: white;
-  font-size: 4em;
-  font-family: NanumGothic;
-  text-align: justify;
-  margin: 0 0 254px 123px;
+p{
+    text-align: center;
 }
 
-
-.paralax-1{
-  background-image: url(/../../static/engine.jpg);
-  background-color: rgba(0, 0, 0, 0.6);
+@media only screen and (max-width: 550px) {
+    .row {
+        margin-bottom: 0;
+    }
+    .column {
+        margin-bottom: 10px;
+    }
+    .row:last-child .column:last-child {
+        margin-bottom: 0;
+    }
 }
 
-
-.paralax-2{
-  background-image: url(/../../static/furnace.jpg);
-  height: 517px;
+/* MolyWorks specific styling*/
+.banner .column{
+    height: 650px;
 }
-.paralax-2-thin{
-  height: 107px;
-  background-image: url(/../../static/furnace.jpg);
+.value-prop .column{
+    height: 325px;
 }
-.product-info{
-  height: 313px;
+.products .row .column .row .column{
+    margin-left: 0;
 }
-.bullet-points{
-  width: 25%;
-  float: left;
-  text-align: left;
-  background-color: white;
+.graph .column-12 .column{
+    height: 162.5px;
 }
-.bullet-points li{
-  padding-bottom: 20px;
-
-}
-.graph{
-  width: 75%;
-  float: right;
-  max-height: 100%;
+.row .row{
+    margin-bottom: 0px;
 }
