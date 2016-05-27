@@ -59,28 +59,7 @@
     width: 100%;
     margin-left: 0;
 }
-/* makes all columns 100% wide and removes "gutters" aka margin-left*/
-@media only screen and (max-width: 550px) {
-    .column-1, 
-    .column-2, 
-    .column-3, 
-    .column-4, 
-    .column-5, 
-    .column-6, 
-    .column-7, 
-    .column-8, 
-    .column-9, 
-    .column-10, 
-    .column-11, 
-    .column-12 {
-        float: none;
-        width: auto;
-    }
-  
-    .column + .column {
-        margin-left: 0;
-    }
-}
+
 
 
  /*General Styling */
@@ -123,8 +102,21 @@ p{
 }
 
 /* MolyWorks specific styling*/
-.banner .column{
-    height: 650px;
+.screen-wrapper{
+    position: relative;
+}
+.main-content{
+    position: absolute;
+    right: -3px;
+
+}
+
+.main-nav{
+    position: fixed;
+    height: 783px;
+}
+.banner{
+
 }
 .value-prop .column{
     height: 325px;
@@ -137,4 +129,31 @@ p{
 }
 .row .row{
     margin-bottom: 0px;
+}/* makes all columns 100% wide and removes "gutters" aka margin-left*/
+@media only screen and (max-width: 550px) {
+    .column-1, 
+    .column-2, 
+    .column-3, 
+    .column-4, 
+    .column-5, 
+    .column-6, 
+    .column-7, 
+    .column-8, 
+    .column-9, 
+    .column-10, 
+    .column-11, 
+    .column-12 {
+        float: none;
+        width: auto;
+    }
+  
+    .column + .column {
+        margin-left: 0;
+    }
+    .main-nav{
+        position: relative;
+    }
+    .main-content {
+        position: relative;
+    }
 }
