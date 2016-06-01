@@ -65,14 +65,11 @@
  /*General Styling */
 
 
-body {
-    padding: 20px;
-}
+
 
 .column {
     background: #eee;
     border: 1px solid #ccc;
-    border-radius: 4px;
     color: #777;
     padding: 5px;
     min-height: 30px;
@@ -105,21 +102,69 @@ p{
 .screen-wrapper{
     position: relative;
 }
-.main-content{
-    position: absolute;
-    right: -3px;
-
-}
-
 .main-nav{
     position: fixed;
     height: 783px;
+    background-color: #006BB6;
+    top: 0;
+    left: 0;
+    border: none;
 }
-.banner{
+.main-nav .particles-js-canvas-el{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.portrait{
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 60px;
+    z-index: 6;
+}
+.identification{
+    color: #fff;
+}
+.name{
+    font-family:"Copperplate Gothic Light";
+    font-weight: bold;
 
 }
+.title{
+        font-family: "Copperplate Gothic Light";
+        color: #FDB927;
+        
+}
+.links{
+    padding-left: 0;
+    list-style: none;
+    padding-top: 25px;
+}
+.links li{
+    margin-top: 25px;
+    font-size: 2em;
+
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Copperplate Gothic Light";
+    z-index: 5;
+    position: relative;
+}
+.links a:hover{
+    color: #FDB927;
+}
+.main-content{
+    position: absolute;
+    right: 0px;
+    margin: 0px;
+}
+.banner{
+    height: 261px;
+}
 .value-prop .column{
-    height: 325px;
+    height: 261px;
 }
 .products .row .column .row .column{
     margin-left: 0;
