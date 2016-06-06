@@ -74,17 +74,7 @@
 
  /*General Styling */
 
-@media only screen and (max-width: 550px) {
-    .row {
-        margin-bottom: 0;
-    }
-    .column {
-        margin-bottom: 10px;
-    }
-    .row:last-child .column:last-child {
-        margin-bottom: 0;
-    }
-}
+
 
 /* MolyWorks specific styling*/
 .screen-wrapper{
@@ -147,10 +137,30 @@
     position: relative;
     font-family: 'Copper Penny';
     font-weight: 100;
-    transition: color .4s ease; 
+    transition: color .2s ease; 
 }
 .links a:hover{
     color: #FDB927;
+}
+.social{
+    position: relative;
+    z-index: 5;
+    padding-top: 50px;
+}
+.social .fa{
+    font-size: x-large;
+    padding: 0 3px;
+    color: #fff;
+    transition: color .2s ease; 
+}
+.fa-github:hover{
+    color: #BA68C8;
+}
+.fa-linkedin-square:hover{
+    color: #2196F3;
+}
+.fa-file-pdf-o:hover{
+    color: #F44336;
 }
 .main-content{
     position: absolute;
@@ -220,14 +230,14 @@
 }
 
 .main-content .row{
-    margin: 0 4%;
+    margin: 0 2%;
 }
 .main-content > .row:first-child{
     margin: 0;
 }
 
 .projects .column-12{
-    margin: 5% 0;
+    margin: 4% 0;
     box-shadow: 0 0 0 1px #000,
                 0 0 0 4px #fbd927,
                 0 0 0 8px #0066b0;
@@ -251,17 +261,15 @@
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
-    border-radius: 10px;
+
 }
-.discription{
-    padding-top: 17px;
-}
+
 .projects p{
     padding-bottom: 10px;
 }
 .projects  ul.tag{
     position: relative;
-    padding-top: 20px
+    padding-top: 2%
 }
 .projects .tag li{
     display: inline-block;
@@ -283,7 +291,7 @@ footer > .row:first-child{
 
 }
 /* makes all columns 100% wide and removes "gutters" aka margin-left*/
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     .column-1, 
     .column-2, 
     .column-3, 
@@ -298,6 +306,35 @@ footer > .row:first-child{
     .column-12 {
         float: none;
         width: auto;
+    
+    }
+        .row {
+        margin-bottom: 0;
+    }
+    .column {
+        margin-bottom: 10px;
+    }
+    
+    .main-content h1{
+    font-size: 2em;
+    }
+    .banner h1{
+        margin-top: 0;
+    }
+    .projects .image-wrapper{
+    margin: 4% 0; 
+    }
+
+}
+@media only screen and (min-width: 850px) {
+    .discription{
+        padding-top: 4%;
+    }
+    .projects .column-12{
+        margin: 2% 0;
+    }
+    .projects .image-wrapper{
+    margin: 2% 0; 
     }
 
 }
