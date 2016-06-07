@@ -364,7 +364,12 @@ textarea{
     width: 100%;
     height: 80px;
 }
-span red{
+input:focus:invalid, textarea:focus:invalid{
+    box-shadow: 0 0 0 1px #F44336,
+                0 0 4px 3px #EF9A9A;
+                border: none;
+}
+span.red{
     color: #F44336;
 }
 .asterisk-span{
@@ -384,7 +389,7 @@ span red{
     margin: -84px auto;
 }
 form .fa{
-    font-size: x-small;
+    font-size: xx-small;
 }
 :-moz-placeholder{
     color: #000;
@@ -397,8 +402,15 @@ form .fa{
 form input:focus, form textarea:focus{
     border: 2px solid #fbd927;
     outline: none;
+    background-color: #fff;
+}
+form input:required:valid:focus, form textarea:required:valid:focus{
+    border: 2px solid #fff;
+    background-color: #4CAF50;
+    box-shadow: none;
 }
 
+    
 form .button{
     width: 50%;
     margin: 0 auto;
