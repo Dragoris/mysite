@@ -12,7 +12,7 @@
     <body>
         <section class="screen-wrapper">    
             <div class="row">
-                <nav class="main-nav column">
+                <nav class="main-nav">
                     <div class="image-wrapper">
                         <img class="portrait" src="placeholder.png"></img>
                     </div>
@@ -27,21 +27,21 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <aside class="social">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        <i class="icon fa fa-github" aria-hidden="true"></i>
+                        <i class="icon fa fa-linkedin-square" aria-hidden="true"></i>
+                        <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
                     </aside>
                     <div id= "particles-js"></div>
                 </nav>
-                <section class="main-content comumn">
+                <section class="main-content">
                     <div class ="row">
-                        <article class="banner column column-12">
-                            <h1>Learning Through Building</h1>
+                        <article class="banner column-12">
+                            <h1>Lorem Ipsum Dolor Sit Amet</h1>
                             <footer>Photo by: Tom Trower</footer>
                         </article>
                     </div>
                     <div class="row">
-                        <article class="about column column-12">
+                        <article class="about column-12">
                             <h1><span class="lines">About Me</span></h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                         </article>
@@ -49,10 +49,10 @@
                     <div class="projects row">
                         <h1><span class="lines">Projects</span></h1>
                          <div class="row">
-                            <article class="column column-12">
+                            <article class="column-12">
                                 <div class="row"> 
-                                    <aside class=" image-wrapper column column-4"></aside>
-                                    <article class=" discription column column-8">
+                                    <aside class=" image-wrapper column-4"></aside>
+                                    <article class=" discription column-8">
                                          <div class="row">  
                                             <h2>Project Title</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -68,10 +68,10 @@
                             </article>
                         </div>
                         <div class="row">
-                            <article class="column column-12">
+                            <article class="column-12">
                                 <div class="row"> 
-                                    <aside class=" image-wrapper column column-4"></aside>
-                                    <article class=" discription column column-8">
+                                    <aside class=" image-wrapper column-4"></aside>
+                                    <article class=" discription column-8">
                                          <div class="row">  
                                             <h2>Project Title</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -87,10 +87,10 @@
                             </article>
                         </div>
                          <div class="row">
-                            <article class="column column-12">
+                            <article class="column-12">
                                 <div class="row"> 
-                                    <aside class=" image-wrapper column column-4"></aside>
-                                    <article class=" discription column column-8">
+                                    <aside class=" image-wrapper column-4"></aside>
+                                    <article class=" discription column-8">
                                          <div class="row">  
                                             <h2>Project Title</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -106,12 +106,26 @@
                             </article>
                         </div>
                     </div>
-                    <footer class="column column-12">
-                        <div class="row">               
-                            <footer class="column column-12">
-                                <h1><span class="lines">Contact me</span></h1>
-                            </footer>
-                        </div> 
+                    <footer class=" contact row">              
+                        <section class="column-12">
+                            <h1><span class="lines">Contact me</span></h1>
+                            <p>onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <div class="form-wrapper">
+                                <p>Required Feild <span class="red">*</span></p>
+                                <form action="https://formspree.io/mtrower42@yahoo.com" method="POST">
+                                    <div><input type="text" name="name" placeholder="Name" required/>
+                                        <span class="fa fa-asterisk asterisk-span" aria-hidden="true"></span></div>
+                                    <div><input type="text" name="company" placeholder="Company"/></div>
+                                    <div><input type="email" name="_replyto" placeholder="E-mail" required/>
+                                        <span class="fa fa-asterisk asterisk-span" aria-hidden="true"></span></div>
+                                    <div><textarea type="text" name="message" placeholder="Message" required></textarea>
+                                        <span class="fa fa-asterisk asterisk-span-textarea" aria-hidden="true"></span></div>
+                                    <div class="button"><input type="submit" value="Send"/></div>
+                                    <input type="hidden" name="_subject" value="New submission!" />
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                </form>
+                            </div>
+                        <section/> 
                     </footer>
                 </section>
             </div>

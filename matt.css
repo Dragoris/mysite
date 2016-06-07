@@ -9,8 +9,7 @@
 }
 
 /* Grid set up */
-.row,
-.column {
+.row{
     box-sizing: border-box; /* adds border and padding into width calulations*/
 }
 /* "clear-fix" to force rows to hold columns*/
@@ -23,51 +22,94 @@
     clear: both;
 }
 
-.column {
-    position: relative;
-    float: left;
-    display: block;
-}
 /* left margin for all except the 1st column*/
 .column + .column {
     margin-left: 1.6%;
 }
 .column-1 {
     width: 6.86666666667%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-2 {
     width: 15.3333333333%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-3 {
     width: 23.8%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-4 {
     width: 32.2666666667%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-5 {
     width: 40.7333333333%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-6 {
     width: 49.2%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-7 {
     width: 57.6666666667%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-8 {
     width: 66.1333333333%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-9 {
     width: 74.6%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-10 {
     width: 83.0666666667%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-11 {
     width: 91.5333333333%;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 .column-12 {
     width: 100%;
     margin-left: 0;
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
 }
 
 
@@ -145,7 +187,7 @@
 .social{
     position: relative;
     z-index: 5;
-    padding-top: 50px;
+    top: 50px;
 }
 .social .fa{
     font-size: x-large;
@@ -197,9 +239,9 @@
     font-weight: 100;
 }
 .banner{
-    height: 600px;
+    height: 625px;
     background-size: cover;
-    background-position: 50% -115px;
+    background-position: 50% -60px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image: url(town.jpg);
@@ -237,11 +279,11 @@
 }
 
 .projects .column-12{
-    margin: 4% 0;
-    box-shadow: 0 0 0 1px #000,
-                0 0 0 4px #fbd927,
-                0 0 0 8px #0066b0;
-    border-radius: 10px;
+    margin: 4% 0%;
+    box-shadow: 0 0 0 4px #0066b0,
+                0 0 6px 5px #fbd927, 
+                0px 0px 10px 10px #FFF59D;
+    border-radius: 15px;
     padding: 0 10px;
 }
 .projects .row{
@@ -263,6 +305,9 @@
     background-position:center;
 
 }
+.projects .discription{
+    padding-left: 10px;
+}
 
 .projects p{
     padding-bottom: 10px;
@@ -280,18 +325,104 @@
     padding: 2px 5px;
     margin: 2px 0;
 }
-footer .column-12{
-    height: 250px;
-    background-attachment: fixed;
-    background-color: #fff;
-    padding: 0;
+.contact{
+    height: 725px;
 }
-footer > .row:first-child{
-    margin: 0;
+.contact p{
+        padding: 0 25px 50px 25px;
+}
+.form-wrapper{
+    width: 75%;
+    background-color: #0066b0;
+    margin: 0 auto;
+}
+.form-wrapper p{
+    padding: 10% 10% 0 0;
+    font-size: small;
+    color: #fff;
+    float: right;
+}
+form{
+    margin: 0 auto;
+    padding: 0 10% 10% 10%;
+}
+form div + div{
+    margin-top: 1em;
+}
+form input, textarea{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    box-shadow: 0 0 3px #ccc, 2px 10px 15px #eee inset;
+    border: 1px solid #000;
+    font-size: 1em;
+    font-family: 'Arvo', serif;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+}
+span red{
+    color: #F44336;
+}
+.asterisk-span{
+    position: relative;
+    color: #F44336;
+    float: right;
+    margin: -40px auto;
+    z-index: 5;
+    padding: 1px;
+}
+.asterisk-span-textarea{
+    position: relative;
+    color: #F44336;
+    float: right;
+    z-index: 5;
+    padding: 1px;
+    margin: -84px auto;
+}
+form .fa{
+    font-size: x-small;
+}
+:-moz-placeholder{
+    color: #000;
+    opacity: .4;
+}
+::-webkit-input-placeholder{
+    color: #000;
+    opacity: .4;
+}
+form input:focus, form textarea:focus{
+    border: 2px solid #fbd927;
+    outline: none;
+}
 
+form .button{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+form .button input{
+    color: #0066b0;
+    background-color: #fff;
+    font-size: 1.5em;
+    font-family: 'Arvo', serif;
+    transition: all .2 ease;
+    box-shadow: none;
+}
+form .button input:active{
+    color: #fbd927;
+    background-color: #0066b0;
+    border: none;
+    box-shadow: 0 0 0 1px #fbd927,
+                0 0 0 2px #fff,
+                0 0 5px 4px #fff;
+    font-size: 1.8em;
 }
 /* makes all columns 100% wide and removes "gutters" aka margin-left*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 625px) {
     .column-1, 
     .column-2, 
     .column-3, 
@@ -320,11 +451,17 @@ footer > .row:first-child{
     }
     .banner h1{
         margin-top: 0;
+        font-size: 3em;
+    }
+    .projects .column-12{
+        margin: 4% 4%;
     }
     .projects .image-wrapper{
-    margin: 4% 0; 
+    margin: 4% 0%; 
     }
-
+    .form-wrapper{
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 850px) {
     .discription{
@@ -335,6 +472,9 @@ footer > .row:first-child{
     }
     .projects .image-wrapper{
     margin: 2% 0; 
+    }
+    .form-wrapper{
+        width: 66%;
     }
 
 }
