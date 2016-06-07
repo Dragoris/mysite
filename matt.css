@@ -125,6 +125,7 @@
 .image-wrapper{
     position: relative;
 }
+
 .main-nav{
     position: fixed;
     height: 783px;
@@ -134,6 +135,7 @@
     border: none;
     width: 25%;
     text-align: center;
+    min-width: 125px;
 }
 .main-nav .particles-js-canvas-el{
     position: absolute;
@@ -179,7 +181,7 @@
     position: relative;
     font-family: 'Copper Penny';
     font-weight: 100;
-    transition: color .2s ease; 
+    transition: color .1s ease; 
 }
 .links a:hover{
     color: #FDB927;
@@ -204,11 +206,15 @@
 .fa-file-pdf-o:hover{
     color: #F44336;
 }
+
+/*------Main Content------*/
+
 .main-content{
     position: absolute;
     right: 0px;
     margin: 0px;
     width: 75%;
+    min-width: 350px;
 }
 .main-content h1{
     padding: 50px 25px;
@@ -241,7 +247,7 @@
 .banner{
     height: 625px;
     background-size: cover;
-    background-position: 50% -60px;
+    background-position: 50% -46px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image: url(town.jpg);
@@ -434,7 +440,7 @@ form .button input:active{
     font-size: 1.8em;
 }
 /* makes all columns 100% wide and removes "gutters" aka margin-left*/
-@media only screen and (max-width: 625px) {
+@media only screen and (max-device-width: 625px), only screen and (max-width: 625px){
     .column-1, 
     .column-2, 
     .column-3, 
@@ -457,11 +463,13 @@ form .button input:active{
     .column {
         margin-bottom: 10px;
     }
-    
+    .main-nav{
+        position: relative;
+    }
     .main-content h1{
     font-size: 2em;
     }
-    .banner h1{
+    article.banner h1{
         margin-top: 0;
         font-size: 3em;
     }
@@ -469,11 +477,13 @@ form .button input:active{
         margin: 4% 4%;
     }
     .projects .image-wrapper{
-    margin: 4% 0%; 
+        margin: 4% 0%; 
+        
     }
     .form-wrapper{
         width: 100%;
     }
+
 }
 @media only screen and (min-width: 850px) {
     .discription{
@@ -483,7 +493,8 @@ form .button input:active{
         margin: 2% 0;
     }
     .projects .image-wrapper{
-    margin: 2% 0; 
+        margin: 2% 0;
+
     }
     .form-wrapper{
         width: 66%;
