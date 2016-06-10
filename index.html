@@ -20,33 +20,30 @@
                         <h1 class="name">Matt Trower</h1>
                         <p class="title">Web Developer</p>
                     </div>
-                    <ul class="links">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul id="links">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <aside class="social">
-                        <i class="icon fa fa-github" aria-hidden="true"></i>
-                        <i class="icon fa fa-linkedin-square" aria-hidden="true"></i>
-                        <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
+                        <a href="https://github.com/Dragoris"><i class="icon fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/matthew-trower"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Dragoris"><i class="icon fa fa-file-pdf-o" aria-hidden="true"></i></a>
                     </aside>
                     <div id= "particles-js"></div>
                 </nav>  
                 <section class="main-content column-12">
-                    
-                        <article class="banner column-12">
-                            <h1>Lorem Ipsum Dolor Sit Amet</h1>
-                            <footer>Photo by: Tom Trower</footer>
-                        </article>
-                    
-                    <div class="row">
-                        <article class="about column-12">
-                            <h1><span class="lines">About Me</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                        </article>
-                    </div>
-                    <div class="projects row">
+                    <article class="banner column-12">
+                        <h1>Lorem Ipsum Dolor Sit Amet</h1>
+                        <footer>Photo by: Tom Trower</footer>
+                    </article>
+                <div class="row">
+                    <article class="about column-12">
+                        <h1 id="about"><span class="lines">About Me</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </article>
+                </div>
+                    <div class="projects row" id="projects">
                         <h1><span class="lines">Projects</span></h1>
                          <div class="row">
                             <article class="column-12">
@@ -106,9 +103,9 @@
                             </article>
                         </div>
                     </div>
-                    <footer class=" contact row">              
+                    <footer class=" contact row" id="contact">              
                         <section class="column-12">
-                            <h1><span class="lines">Contact me</span></h1>
+                            <a id ="contact"></a><h1><span class="lines">Contact me</span></h1>
                             <p>onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                             <div class="form-wrapper">
                                 <p>Required Feild <span class="red">*</span></p>
@@ -131,6 +128,7 @@
             </div>
         </section>
     </body>
+    <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="matt.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="text/javascript" src="node_modules/particles.js/particles.js"></script>
