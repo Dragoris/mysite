@@ -3,7 +3,7 @@
 
 // media query event handler
 if (matchMedia) {
-  var mq = window.matchMedia("only screen and (min-width: 990px)");
+  var mq = window.matchMedia("only screen and (min-width: 625px)");
   mq.addListener(WidthChange);
   WidthChange(mq);
 }
@@ -14,7 +14,7 @@ function WidthChange(mq) {
     // window width is at least 990px
     window.addEventListener('scroll', function () {
     var scrolled = window.scrollY;
-    	document.querySelector('.banner h1').style.marginTop =  (35+scrolled*0.75)+ "px";
+    	document.querySelector('.banner h1').style.marginTop =  (35+scrolled*0.7)+ "px";
 	});
   } 
 
