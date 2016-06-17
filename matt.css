@@ -518,7 +518,7 @@ form .button input:active{
     }
 
 }
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 1350px) {
     .banner{
         height: 610px;
     background-position: 50% -200px;
