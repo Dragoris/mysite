@@ -247,7 +247,7 @@
     font-weight: 100;
 }
 .banner{
-    height: 625px;
+    height: 620px;
     background-size: cover;
     background-position: 50% -46px;
     background-attachment: fixed;
@@ -517,4 +517,13 @@ form .button input:active{
         font-size: 1.5em;
     }
 
+}
+@media only screen and (min-width: 1250px) {
+    .banner{
+        height: 610px;
+    background-position: 50% -200px;
+    }
+    .banner footer{
+        bottom: 5px;
+    }
 }
