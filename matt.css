@@ -521,7 +521,8 @@ form .button input:active{
 @media only screen and (min-width: 1350px) {
     .banner{
         height: 610px;
-    background-position: 50% -200px;
+        background-position: 50% -200px;
+        font-size: 3.2em;
     }
     .banner footer{
         bottom: 5px;

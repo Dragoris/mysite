@@ -1,6 +1,6 @@
 
 
-
+/*
 // media query event handler
 if (matchMedia) {
   var mq = window.matchMedia("only screen and (min-width: 625px)");
@@ -17,7 +17,7 @@ function WidthChange(mq) {
     	document.querySelector('.banner h1').style.marginTop =  (35+scrolled*0.7)+ "px";
 	});
   } 
-
+*/
 }
 //scroll to location of an id matching the link hash
 $('a[href^="#"]').click(function(e) {
