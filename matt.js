@@ -17,8 +17,8 @@ function WidthChange(mq) {
     	document.querySelector('.banner h1').style.marginTop =  (35+scrolled*0.7)+ "px";
 	});
   } 
-*/
-}
+
+}*/
 //scroll to location of an id matching the link hash
 $('a[href^="#"]').click(function(e) {
   $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 1000); 

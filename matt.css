@@ -274,7 +274,7 @@
 .about p{
     padding: 0 25px 50px 25px;
 }
-.about p:nth-child(3n){
+.about p:nth-child(4n){
     padding-bottom: 0;
 }
 .main-content .row{
