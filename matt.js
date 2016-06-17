@@ -1,6 +1,6 @@
 
 
-/*
+
 // media query event handler
 if (matchMedia) {
   var mq = window.matchMedia("only screen and (min-width: 625px)");
@@ -18,7 +18,7 @@ function WidthChange(mq) {
 	});
   } 
 
-}*/
+}
 //scroll to location of an id matching the link hash
 $('a[href^="#"]').click(function(e) {
   $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 1000); 
