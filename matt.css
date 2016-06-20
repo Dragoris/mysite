@@ -300,11 +300,26 @@
 }
 .projects .image-wrapper{/*making images keep aspect ratio*/
     height: 200px;
-    background-image:url('placeholder.png');
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
 
+}
+.projects .lazydj{
+    background-image:url('lazydj.jpg');
+}
+
+.projects .portfolio{
+    background-image:url('portfolio.jpg');
+}
+.projects a{
+    text-decoration: none;
+    color: #000;
+    transition: color .1s ease;
+    transition: transform 0.6s ease-in-out;
+}
+.projects a:hover{
+    color: #FDB927;
 }
 .projects .discription{
     padding-left: 10px;
