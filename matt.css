@@ -478,7 +478,7 @@ form .button input:active{/*button when clicked*/
     .column-11, 
     .column-12 {
         float: none;
-        width: auto;
+        width: 100vw;
     }
     .row {
         margin-bottom: 0;
@@ -488,7 +488,6 @@ form .button input:active{/*button when clicked*/
     }
     .main-nav{
         position: relative;
-        width: 100vw;
     }
     .main-nav .portrait{
         width: 50%;
