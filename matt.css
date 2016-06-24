@@ -503,7 +503,7 @@ form .button input:active{/*button when clicked*/
     }
     .social .fa{
         font-size: 2.5em;
-        padding: 0 2.5%;
+        margin: 0 3.5%;
     }
     .main-content p{
         font-size: 2em;
