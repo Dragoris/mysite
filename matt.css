@@ -488,7 +488,7 @@ form .button input:active{/*button when clicked*/
     }
     .main-nav{
         position: relative;
-        height: 
+        width: 100vw;
     }
     .main-nav .portrait{
         width: 50%;
