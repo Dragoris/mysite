@@ -478,6 +478,9 @@ form .button input:active{/*button when clicked*/
     .column-11, 
     .column-12 {
         float: none;
+        width: auto;
+    }
+    body{
         width: 100vw;
     }
     .row {
