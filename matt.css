@@ -480,9 +480,6 @@ form .button input:active{/*button when clicked*/
         float: none;
         width: auto;
     }
-    .main-nav, .main-content{
-        width: 100vw;
-    }
     .row {
         margin-bottom: 0;
     }
