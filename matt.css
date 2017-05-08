@@ -19,7 +19,7 @@ url('Copper-Penny.ttf.') format('woff');}
 .column-12{width:100%;margin-left:0;position:relative;float:left;display:block;box-sizing:border-box;}
 .screen-wrapper{position:relative;}
 .image-wrapper{position:relative;}
-.main-nav{position:fixed;height:100vw;min-height:783px;background-color:#006BB6;top:0;left:0;border:none;width:25%;text-align:center;}
+.main-nav{position:fixed;height:100vw;min-height:783px;background-color:#006BB6;top:0;left:0;border:none;text-align:center;}
 .main-nav .particles-js-canvas-el{position:absolute;top:0;left:0;z-index:1;}
 .portrait{position:relative;width:50%;min-width:150px;margin:0 auto;margin-top:60px;z-index:6;}
 .identification{color:#fff;}
@@ -54,6 +54,8 @@ url('Copper-Penny.ttf.') format('woff');}
 .main-content h2{font-size:1.5em;padding:10px 0;font-family:'Arvo', serif;font-weight:800;}
 .projects .image-wrapper{height:200px;background-repeat:no-repeat;background-size:contain;background-position:center;}
 .projects .lazydj{background-image:url('lazydj.jpg');}
+.projects .nba{background-image:url('nba-logo.jpg');}
+.projects .python{background-image:url('python.jpg');}
 .projects .portfolio{background-image:url('portfolio.jpg');}
 .projects a{text-decoration:none;color:#000;transition:color .1s ease;transition:transform 0.6s ease-in-out;}
 .projects a:hover{color:#FDB927;}
@@ -63,7 +65,7 @@ url('Copper-Penny.ttf.') format('woff');}
 .projects .tag li{display:inline-block;background-color:#0066b0;color:#fff;border:1px solid #000;border-radius:5px;padding:2px 5px;margin:2px 0;}
 .contact p{padding:0 25px 50px 25px;}
 .form-wrapper{width:66%;background-color:#0066b0;margin:0 auto;}
-.form-wrapper p{padding:10% 0 10% 0;color:#fff;font-size:1em;}
+.form-wrapper p{padding:5% 0 5% 0;color:#fff;font-size:1em;}
 .form-wrapper p:nth-child(2n){padding:0;}
 .form-wrapper footer{font-size:small;color:#fff;float:right;}
 form{margin:0 auto 50px;padding:0 10% 10% 10%;}
