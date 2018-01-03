@@ -1,158 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Matt Trower</title>
-    </head> 
-    <body>    
-        <div class="row"> 
-            <nav class="main-nav column-3">
-                <div class="image-wrapper">
-                    <img class="portrait" src="me.jpg"></img>
-                </div>
-                <div class="identification">
-                    <h1 class="name">Matt Trower</h1>
-                    <p class="title">Web Developer</p>
-                </div>
-                <ul id="links">
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <aside class="social">
-                    <a href="https://github.com/Dragoris" target="_blank"><i class="icon fa fa-github" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/matthew-trower" target="_blank"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
-                    <a href="resume.pdf" target="_blank"><i class="icon fa fa-file-pdf-o" aria-hidden="true"></i></a>
-                </aside>
-                <div id= "particles-js"></div>
-            </nav>  
-            <section class="main-content column-12">
-                <article class="banner column-12">
-                    <h1>My Journey Through Web Development</h1>
-                    <footer>Photo by: Tom Trower</footer>
-                </article>
-            <div class="row">
-                <article class="about column-12">
-                    <h1 id="about"><span class="lines">About Me</span></h1>
-                    <p>Hey, my name is Matt and I've become fascinated by the internet and it's ability to facilitate shared ideas across the world. For years I enjoyed everything the web has to offer without ever questioning why or how it all worked. It wasn't until I started drilling down into those questions that I got hooked on trying to get my own creations on the web for the world to see. After studying up on how all the pieces fit together I realized web development wasn't done through some unattainable sorcery (even though it still sometimes feels like it!), it's something I can actually do.</p>
-                    <p>My days quickly became consumed by learning the fundamentals of the web and how I can interact with it. These studies, in turn, inspired me to tackle my first website, LazyDJ, and implement the concepts I've read about. My site you are visiting today is where I'll be sharing with you what I've made and what I've learned, I hope you enjoy.</p>
-                    <p>When I'm not digging into the internet you'll find me playing basketball with my team, marveling at the Warriors' unselfish style of play and chemistry, or backpacking through the northern California wilderness with friends and family.</p>
-                </article>
-            </div>
-                <div class="projects row" id="projects">
-                    <h1><span class="lines">Projects</span></h1>
-                    <div class="row">
-                        <article class="column-12">
-                            <div class="row"> 
-                                <aside class="nba image-wrapper column-4"></aside>
-                                <article class=" discription column-8">
-                                     <div class="row">  
-                                        <h2><a href="https://github.com/Dragoris/NBA-Trade-App" target="_blank">NBA Trade App</a></h2>
-                                        <p>This is a project I started to give me and my basketball nerd friends something to argue about on the internet! The goal of this app is to present what it sees as a "balanced" player trade between two teams and then allow users to vote on which team would "win" the hypethetical trade (i.e get back better players than it sent away). </p>
-                                        <ul class="tag">
-                                            <li>Javascript</li>
-                                            <li>Firebase</li>
-                                            <li>Handlebars.js</li>
-                                        </ul>
-                                    </div> 
-                                </article>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="row">
-                        <article class="column-12">
-                            <div class="row"> 
-                                <aside class="python image-wrapper column-4"></aside>
-                                <article class=" discription column-8">
-                                     <div class="row">  
-                                        <h2><a href="https://github.com/Dragoris/scraper" target="_blank">Python Web Scraper</a></h2>
-                                        <p>A web scraper to gather NBA data from basketballreference.com and format it into a JSON object. The data structure is then run through a simple validation that uses type, length, and Regex to varify all stats match up to the correct categorey. Once validated, I use this JSON file to power my NBA Trade App.</p>
-                                        <ul class="tag">
-                                            <li>Python</li>
-                                            <li>Selenium</li>
-                                            <li>JSON</li>
-                                           
-                                        </ul>
-                                    </div> 
-                                </article>
-                            </div>
-                        </article>
-                    </div>
-                     <div class="row">
-                        <article class="column-12">
-                            <div class="row"> 
-                                <aside class="lazydj image-wrapper column-4"></aside>
-                                <article class=" discription column-8">
-                                     <div class="row">  
-                                        <h2><a href="https://github.com/Dragoris/lazydj" target="_blank">lazydj.net</a></h2>
-                                        <p>LazyDJ is a music playing app that I built using SoundCloud's API to search for and play songs. I decided to use jQuery UI for a search bar so that the processed results can be displayed automatically and updated asynchronously for a seamless user experience.</p>
-                                        <ul class="tag">
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Javascript</li>
-                                            <li>jQuery</li>
-                                            <li>API</li>
-                                        </ul>
-                                    </div> 
-                                </article>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="row">
-                        <article class="column-12">
-                            <div class="row"> 
-                                <aside class="portfolio image-wrapper column-4"></aside>
-                                <article class=" discription column-8">
-                                     <div class="row">  
-                                        <h2><a href="http://www.matthewtrower.net">matthewtrower.net</a></h2>
-                                        <p>This very site! I made my portfolio site with a simple responsive grid system I built as a learning experience. I wanted to create a platform to show off my what I've learned and implemented through a growing collection of projects. Look for more to come soon.</p>
-                                        <ul class="tag">
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>jQuery</li>
-                                        </ul>
-                                    </div> 
-                                </article>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <article class=" contact row" id="contact">              
-                    <div class="column-12">
-                        <a id ="contact"></a><h1><span class="lines">Contact me</span></h1>
-                        <div class="form-wrapper">
-                            <form action="https://formspree.io/mtrower42@gmail.com" method="POST">
-                                <p>Interested in working together or getting to know more about me? Drop me a line anytime and I'll get back to you as soon as possible.</p> 
-                                <p> Phone: 831-246-0813<br> Email: mtrower42@gmail.com</p>
-                                <p>Or use the form below to start a conversation right now.</p>
-                                <footer>Required Field <span class="red">*</span></footer>
-                                <div><input type="text" name="name" placeholder="Name" required title="WHAT is your name?"/>
-                                    <span class="fa fa-asterisk asterisk-span" aria-hidden="true"></span></div>
-                                <div><input type="text" name="company" placeholder="Company" title="WHAT is your quest?"/></div>
-                                <div><input type="email" name="_replyto" placeholder="E-mail" required title="WHAT is your favorite email?"/>
-                                    <span class="fa fa-asterisk asterisk-span" aria-hidden="true"></span></div>
-                                <div><textarea type="text" name="message" placeholder="Message" required title="'Yahoo, no I mean ...Gmail!...'"></textarea>
-                                    <span class="fa fa-asterisk asterisk-span-textarea" aria-hidden="true"></span></div>
-                                <div class="button"><input type="submit" value="Send"/></div>
-                                <input type="hidden" name="_subject" value="New submission!"/>
-                                <input type="text" name="_gotcha" style="display:none"/>
-                            </form>
-                        </div>
-                    <div/> 
-                </article>
-            </section>
-        </div>
-    </body>
-    
+<head>
+	<title>Whisked Away Cakery</title>
 
- 
-    <script async type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script async type="text/javascript" src="node_modules/particles.js/particles.js"></script>
-    <script async type="text/javascript" src="node_modules/particles.js/demo/js/app.js"></script>
-       <script async src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script async src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-    <script async type="text/javascript" src="matt.js"></script>
-    <link rel="stylesheet" type="text/css" href="matt.css">
-    <link  href='https://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="kelly.css">
+
+</head>
+
+
+<body>
+	<!-- <div id="header">
+		<img class="logo" src="whisk.png">
+		<div class="company-name">
+			<p>Whisked Away Cakery</p>
+		</div>
+	</div> -->
+	<div id="background">
+		<div class="message">
+			<img class="logo" src="whisk.png">
+			<div class="company-name">
+				<p>Whisked Away Cakery</p>
+			</div>
+			<h3 style="margin: 5px 0  0 0 ">Creative gourmet cakes available now!</h3>
+			<p style="margin-top: 0">Site coming to you soon</p>
+
+			<div class="thumbnails">
+				<a href="image1.jpeg" target="_blank" title="click to view fullsize image"><img src="image1.jpeg"></a>
+				<a href="image2.jpeg" target="_blank" title="click to view fullsize image"><img src="image2.jpeg"></a>
+				<a href="image3.jpeg" target="_blank" title="click to view fullsize image"><img src="image3.jpeg"></a>
+				<a href="image4.jpeg" target="_blank" title="click to view fullsize image"><img src="image4.jpeg"></a>
+			</div>
+			<p>If you want amazing cakes such as these, contact Kelly Biles today!<br>
+				(831) 345-9836<br>
+				LoveThroughFrosting@gmail.com
+			</p>
+		</div>
+
+	</div>
+</body>
 </html>
-

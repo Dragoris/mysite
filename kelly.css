@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+#background{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('background.jpg');
+	height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-name{
+	display: inline-block;
+    height: 100%;
+    font-size: 35px;
+    vertical-align: bottom;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    color: #ad1f1f;
+    font-weight: bold;
+}
+.logo{
+	height: 100px;
+    padding: 5px;
+}
+.message{
+	background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.thumbnails{
+	display: inline-block;
+}
+
+.thumbnails img{
+	width: 125px;
+	height: 125px;
+	cursor: pointer;
+}
